@@ -59,7 +59,7 @@ $route['translate_uri_dashes'] = FALSE;
 //===============================================Front Hissesi========================================================================
 
 //----------------------------------------------------Ana sehife---------------------------------------
-$route['home'] =  'HomeWebPageCoding/index';
+$route['(:any)/home'] =  'HomeWebPageCoding/index/$1';
 
 
 //----------------------------------------------------Haqqimizda---------------------------------------
@@ -67,40 +67,40 @@ $route['(:any)/about'] =  'AboutWebPageCoding/index/$1';
 
 
 //----------------------------------------------------Xaricde Tehsil---------------------------------------
-$route['study/abroad'] =  'StudyAbroadWebPageCoding/index';
+$route['(:any)/study/abroad'] =  'StudyAbroadWebPageCoding/index/$1';
 
 
 
 //----------------------------------------------------Xaricde Tehsil---------------------------------------
-$route['faq'] =  'FaqWebPageCoding/index';
+$route['(:any)/faq'] =  'FaqWebPageCoding/index/$1';
 
 
 //----------------------------------------------------Kontakt---------------------------------------
-$route['contact'] =  'ContactWebPageCoding/index';
-$route['(:any)/message_send'] =  'ContactWebPageCoding/send_message';
+$route['(:any)/contact'] =  'ContactWebPageCoding/index/$1';
+$route['(:any)/message_send'] =  'ContactWebPageCoding/send_message/$1';
 
 
 //----------------------------------------------------Kurslar---------------------------------------
-$route['course'] =  'CoursesWebPageCoding/index';
+$route['(:any)/course'] =  'CoursesWebPageCoding/index/$1';
 
 
 //----------------------------------------------------Tedbirler---------------------------------------
-$route['events'] =  'EventsWebPageCoding/index';
-$route['event/single'] =  'EventsWebPageCoding/single';
+$route['(:any)/events'] =  'EventsWebPageCoding/index/$1';
+$route['(:any)/event/single'] =  'EventsWebPageCoding/single/$1';
 
 
 
 //----------------------------------------------------Muellimler---------------------------------------
-$route['teachers'] =  'TeachersWebPageCoding/index';
-$route['teacher/single'] =  'TeachersWebPageCoding/single';
+$route['(:any)/teachers'] =  'TeachersWebPageCoding/index/$1';
+$route['(:any)/teacher/single'] =  'TeachersWebPageCoding/single/$1';
 
 
 //----------------------------------------------------Bloqlar---------------------------------------
-$route['blogs'] =  'BlogsWebPageCoding/index';
-$route['blog/single'] =  'BlogsWebPageCoding/single';
+$route['(:any)/blogs'] =  'BlogsWebPageCoding/index/$1';
+$route['(:any)/blog/single'] =  'BlogsWebPageCoding/single/$1';
 
 
 //----------------------------------------------------Turlar---------------------------------------
-$route['(:any)/tours'] =  'ToursWebPageCoding/index';
-$route['(:any)/tour'] =  'ToursWebPageCoding/single';
+$route['(:any)/tours'] =  'ToursWebPageCoding/index/$1';
+$route['(:any)/tour'] =  'ToursWebPageCoding/single/$1';
 
