@@ -86,13 +86,13 @@ $route['(:any)/course'] =  'CoursesWebPageCoding/index/$1';
 
 //----------------------------------------------------Tedbirler---------------------------------------
 $route['(:any)/events'] =  'EventsWebPageCoding/index/$1';
-$route['(:any)/event/single'] =  'EventsWebPageCoding/single/$1';
+$route['(:any)/event/single/(:any)'] =  'EventsWebPageCoding/single/$1/$2';
 
 
 
 //----------------------------------------------------Muellimler---------------------------------------
 $route['(:any)/teachers'] =  'TeachersWebPageCoding/index/$1';
-$route['(:any)/teacher/single'] =  'TeachersWebPageCoding/single/$1';
+$route['(:any)/teacher/single/(:any)'] =  'TeachersWebPageCoding/single/$1/$2';
 
 
 //----------------------------------------------------Bloqlar---------------------------------------

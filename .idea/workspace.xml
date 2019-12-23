@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="126a874a-7f4d-4c2d-b0ca-076c7da78e66" name="Default Changelist" comment="" />
+    <list default="true" id="126a874a-7f4d-4c2d-b0ca-076c7da78e66" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/EventsWebPageCoding.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/EventsWebPageCoding.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/TeachersWebPageCoding.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/TeachersWebPageCoding.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/az/az_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/az/az_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/en/en_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/en/en_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/language/ru/ru_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/ru/ru_lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Core.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Core.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/front/events/single_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/front/events/single_page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/front/events/whole_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/front/events/whole_page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/front/teachers/single_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/front/teachers/single_page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/front/teachers/whole_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/front/teachers/whole_page.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +73,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ielts-1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Audit" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -105,9 +118,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1577129258892">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="454" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1577136944090">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="454" y="154" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1577136944090" />
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1577129258892" />
     <state x="339" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1577130954102">
       <screen x="0" y="27" width="1366" height="741" />

@@ -1,15 +1,15 @@
 <?php $this->load->view("front/includes/top_all"); ?>
-
+<?php $lang = $this->session->userdata("dil"); ?>
 
 <!-- Start Breadcrumbs -->
 <section class="breadcrumbs overlay">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2>Events Pages</h2>
+                <h2><?php echo $this->lang->line("tedbirlerimiz") ?></h2>
                 <ul class="bread-list">
-                    <li><a href="index.html">Home<i class="fa fa-angle-right"></i></a></li>
-                    <li class="active"><a href="event-single.html">Event Single</a></li>
+                    <li><a href="index.html"><?php echo $this->lang->line("ana_sehife") ?><i class="fa fa-angle-right"></i></a></li>
+                    <li class="active"><a href="event-single.html"><?php echo $this->lang->line("tedbirlerimiz") ?></a></li>
                 </ul>
             </div>
         </div>
@@ -24,25 +24,19 @@
             <div class="col-lg-8 col-12">
                 <div class="single-event">
                     <div class="event-gallery">
+                        <?php foreach ($images as $image){ ?>
                         <div class="single-gallery">
-                           <img src="<?php echo base_url("public/front/") ?>images/events/event1.jpg" alt="#">
+                           <img src="<?php echo base_url("uploads/events/".$image) ?>" alt="#">
                         </div>
-                        <div class="single-gallery">
-                           <img src="<?php echo base_url("public/front/") ?>images/events/event2.jpg" alt="#">
-                        </div>
-                        <div class="single-gallery">
-                           <img src="<?php echo base_url("public/front/") ?>images/events/event3.jpg" alt="#">
-                        </div>
+                        <?php } ?>
                     </div>
                     <div class="event-content">
                         <div class="meta">
-                            <span><i class="fa fa-calendar"></i>05 June 2019</span>
-                            <span><i class="fa fa-clock-o"></i>12.00-5.00PM</span>
+                            <span><i class="fa fa-calendar"></i><?php echo $event['date'] ?></span>
+                            <span><i class="fa fa-clock-o"></i><?php echo date('g:i', strtotime($event['start_time'])) ?>-<?php echo date('g:i', strtotime($event['end_time'])) ?></span>
                         </div>
-                        <h2><a href="event-single.html">Best Student Award Day 2019</a></h2>
-                        <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words</p>
-                       <img src="<?php echo base_url("public/front/") ?>images/events/event3.jpg" alt="#">
-                        <p> littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humours</p>
+                        <h2><a href="#"><?php echo $event['name_'.$lang] ?></a></h2>
+                        <p><?php echo $event['desc_'.$lang] ?></p>
                     </div>
                 </div>
             </div>
@@ -60,42 +54,7 @@
                             </div>
                         </div>
                         <!-- Single Course -->
-                        <!-- Single Course -->
-                        <div class="single-course">
-                           <img src="<?php echo base_url("public/front/") ?>images/course/course2.jpg" alt="#">
-                            <div class="course-content">
-                                <h4><a href="#">Pre-Intermediate Course</a></h4>
-                                <div class="meta">$150.00, <span><i class="fa fa-clock-o"></i>1 Year</span></div>
-                            </div>
-                        </div>
-                        <!-- Single Course -->
-                        <!-- Single Course -->
-                        <div class="single-course">
-                           <img src="<?php echo base_url("public/front/") ?>images/course/course3.jpg" alt="#">
-                            <div class="course-content">
-                                <h4><a href="#">Intermediate Course</a></h4>
-                                <div class="meta">$500.00, <span><i class="fa fa-clock-o"></i>6 Month</span></div>
-                            </div>
-                        </div>
-                        <!-- Single Course -->
-                        <!-- Single Course -->
-                        <div class="single-course">
-                           <img src="<?php echo base_url("public/front/") ?>images/course/course4.jpg" alt="#">
-                            <div class="course-content">
-                                <h4><a href="#">Upper-Intermediate Course</a></h4>
-                                <div class="meta">$200.00, <span><i class="fa fa-clock-o"></i>1 Year</span></div>
-                            </div>
-                        </div>
-                        <!-- Single Course -->
-                        <!-- Single Course -->
-                        <div class="single-course">
-                           <img src="<?php echo base_url("public/front/") ?>images/course/course5.jpg" alt="#">
-                            <div class="course-content">
-                                <h4><a href="#">Advanced Courses</a></h4>
-                                <div class="meta">$300.00, <span><i class="fa fa-clock-o"></i>2 Years</span></div>
-                            </div>
-                        </div>
-                        <!-- Single Course -->
+
                     </div>
                 </div>
             </div>
