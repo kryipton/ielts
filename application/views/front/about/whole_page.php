@@ -1,3 +1,4 @@
+<?php $lang = $this->session->userdata("lang") ; echo $lang ; die(); ?>
 <?php $this->load->view("front/includes/top_all"); ?>
 
 <!-- Start Breadcrumbs -->

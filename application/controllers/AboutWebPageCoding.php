@@ -24,8 +24,8 @@
      public function index()
      {
 
-
-         $this->load->view("$this->parent_folder/$this->sub_folder/whole_page");
+         $data["about"]=$this->Core->get_where_row(["id"=>1],"about");
+         $this->load->view("$this->parent_folder/$this->sub_folder/whole_page",$data);
      }
 
 
