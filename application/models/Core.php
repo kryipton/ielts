@@ -61,7 +61,10 @@
         return $this->db->where($where)->get($table_name)->row_array();
     }
 
-
+    public function get_row($table_name)
+    {
+        return $this->db->get($table_name)->row_array();
+    }
 
 
     //  get data with where and result array with asc
