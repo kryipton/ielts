@@ -10,14 +10,14 @@
          $this->parent_folder = "front";
          $this->sub_folder = "courses";
 
-/*
+
         $dil = $this->uri->segment(1);
          if ($dil == ""){
              $dil = "az";
          }
          $this->lang->load($dil, $dil);
 
-         $this->session->set_userdata("dil", $dil);*/
+         $this->session->set_userdata("dil", $dil);
 
      }
 

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="126a874a-7f4d-4c2d-b0ca-076c7da78e66" name="Default Changelist" comment="" />
+    <list default="true" id="126a874a-7f4d-4c2d-b0ca-076c7da78e66" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/BlogsWebPageCoding.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/BlogsWebPageCoding.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,5 +112,13 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1577129258892" />
+    <state x="339" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1577130954102">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="339" y="224" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1577130954102" />
+    <state x="408" y="310" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1577131127863">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="408" y="310" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1366.741@0.27.1366.741" timestamp="1577131127863" />
   </component>
 </project>
