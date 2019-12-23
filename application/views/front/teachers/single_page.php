@@ -36,8 +36,8 @@
                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                         </ul>
                         <ul class="address">
-                            <li><a href="mailto:rachel@websitename.com"><i class="fa fa-envelope"></i>rachel@websitename.com</a></li>
-                            <li><i class="fa fa-phone"></i>+44 1236 456 8888</li>
+                            <li><a href="mailto:hi@ieltscoaching.az"><i class="fa fa-envelope"></i>hi@ieltscoaching.az</a></li>
+                            <li><i class="fa fa-phone"></i>(+994) 55 520 99 19</li>
                         </ul>
                     </div>
                 </div>

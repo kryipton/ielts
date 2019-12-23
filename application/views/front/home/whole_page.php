@@ -404,10 +404,10 @@
                         </div>
                         <div class="event-content">
                             <div class="meta">
-                                <span><i class="fa fa-calendar"></i>05 June 2018</span>
+                                <span><i class="fa fa-calendar"></i>05 June 2019</span>
                                 <span><i class="fa fa-clock-o"></i>12.00-5.00PM</span>
                             </div>
-                            <h4><a href="event-single.html">Freshers Day Reception 2018</a></h4>
+                            <h4><a href="event-single.html">Freshers Day Reception 2019</a></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt</p>
                             <div class="button">
                                 <a href="event-single.html" class="btn">Join Event</a>
@@ -423,10 +423,10 @@
                         </div>
                         <div class="event-content">
                             <div class="meta">
-                                <span><i class="fa fa-calendar"></i>03 July 2018</span>
+                                <span><i class="fa fa-calendar"></i>03 July 2019</span>
                                 <span><i class="fa fa-clock-o"></i>03.20-5.20PM</span>
                             </div>
-                            <h4><a href="event-single.html">Best Student Award 2018</a></h4>
+                            <h4><a href="event-single.html">Best Student Award 2019</a></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt</p>
                             <div class="button">
                                 <a href="event-single.html" class="btn">Join Event</a>
@@ -442,7 +442,7 @@
                         </div>
                         <div class="event-content">
                             <div class="meta">
-                                <span><i class="fa fa-calendar"></i>15 Dec 2018</span>
+                                <span><i class="fa fa-calendar"></i>15 Dec 2019</span>
                                 <span><i class="fa fa-clock-o"></i>12.30-5.30PM</span>
                             </div>
                             <div class="title">

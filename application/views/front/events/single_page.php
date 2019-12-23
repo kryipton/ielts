@@ -36,10 +36,10 @@
                     </div>
                     <div class="event-content">
                         <div class="meta">
-                            <span><i class="fa fa-calendar"></i>05 June 2018</span>
+                            <span><i class="fa fa-calendar"></i>05 June 2019</span>
                             <span><i class="fa fa-clock-o"></i>12.00-5.00PM</span>
                         </div>
-                        <h2><a href="event-single.html">Best Student Award Day 2018</a></h2>
+                        <h2><a href="event-single.html">Best Student Award Day 2019</a></h2>
                         <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words</p>
                        <img src="<?php echo base_url("public/front/") ?>images/events/event3.jpg" alt="#">
                         <p> littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humours</p>
