@@ -63,7 +63,7 @@ $route['home'] =  'HomeWebPageCoding/index';
 
 
 //----------------------------------------------------Haqqimizda---------------------------------------
-$route['about'] =  'AboutWebPageCoding/index';
+$route['(:any)/about'] =  'AboutWebPageCoding/index/$1';
 
 
 //----------------------------------------------------Xaricde Tehsil---------------------------------------

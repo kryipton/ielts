@@ -11,13 +11,13 @@
          $this->sub_folder = "about";
 
 
-       /* $dil = $this->uri->segment(1);
+      $dil = $this->uri->segment(1);
          if ($dil == ""){
              $dil = "az";
          }
          $this->lang->load($dil, $dil);
 
-         $this->session->set_userdata("dil", $dil);*/
+         $this->session->set_userdata("dil", $dil);
 
      }
 
