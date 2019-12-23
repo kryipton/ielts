@@ -24,10 +24,10 @@ class Panel_admin_page_faqs_about extends MY_Controller{
         parent::__construct();
 
 //      adminin icindeki papkanin adi
-        $this->view_folder = "teachers_about";
+        $this->view_folder = "faqs_about";
 
 //      tablemizin adi
-        $this->table_name = "teachers_about";
+        $this->table_name = "faqs_about";
 
 //      sekilleri ve fayllari yukleyeceyimiz yer meselen: base_url("uploads/teachers/")
         $this->upload_path = "";

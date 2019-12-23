@@ -23,9 +23,10 @@
 
      public function index()
      {
+             $data["faqs_about"]=$this->Core->get_where_row(["id"=>1],"faqs_about");
+             $data["faqs"]=$this->Core->get_asc("faqs");
 
-
-         $this->load->view("$this->parent_folder/$this->sub_folder/whole_page");
+         $this->load->view("$this->parent_folder/$this->sub_folder/whole_page",$data);
      }
 
 

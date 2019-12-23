@@ -16,6 +16,8 @@ $lang["diger_kurslar"] = "Другие курсы";
 $lang["partnoyorlar"] = "Партнеры";
 
 $lang["mezunlar"] = "Выпускники";
+$lang["mukafatlar"] = "Награды";
+
 
 
 
@@ -75,5 +77,8 @@ $lang["success"] = "Ваше сообщение отправлено!";
 $lang["alert"] = "Произошла ошибка!";
 
 
-
+//-----------------------------
+$lang["xaricde_tehsil"] = "Учеба за границей";
+$lang["bloglar"] = "Блоги";
+$lang["Faq"] = "Чзв";
 

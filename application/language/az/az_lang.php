@@ -14,6 +14,7 @@ $lang["partnoyorlar"] = "Tərəfdaşlar";
 
 
 $lang["mezunlar"] = "Məzunlar";
+$lang["mukafatlar"] = "Mükafatlar";
 
 
 
@@ -71,6 +72,10 @@ $lang["alert"] = "Xəta baş verdi!";
 
 
 
+//-----------------------------
+$lang["xaricde_tehsil"] = "Xaricdə Təhsil";
+$lang["bloglar"] = "Bloqlar";
+$lang["Faq"] = "Faq";
 
 
 

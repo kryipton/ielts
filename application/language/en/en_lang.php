@@ -15,6 +15,8 @@ $lang["diger_kurslar"] = "Other Courses";
 $lang["partnoyorlar"] = "Partners";
 
 $lang["mezunlar"] = "Graudates";
+$lang["mukafatlar"] = "Awards";
+
 
 
 
@@ -72,6 +74,10 @@ $lang["success"] = "Your message is sent!";
 $lang["alert"] = "Error!";
 
 
+//-----------------------------
+$lang["xaricde_tehsil"] = "Study Abroad";
+$lang["bloglar"] = "Blogs";
+$lang["Faq"] = "Faq";
 
 
 

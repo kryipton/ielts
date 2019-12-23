@@ -25,6 +25,11 @@
      {
 
          $data["about"]=$this->Core->get_where_row(["id"=>1],"about");
+
+         //telebe kurs sayisi counteri ucun
+         $data["info"]=$this->Core->get_where_row(["id"=>1],"info");
+         //telebe kurs sayisi counteri ucun
+
          $this->load->view("$this->parent_folder/$this->sub_folder/whole_page",$data);
      }
 
