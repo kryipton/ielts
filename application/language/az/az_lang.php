@@ -67,6 +67,7 @@ $lang["gonder"] = "Göndər";
 $lang["lokasiya"] = "Yer";
 $lang["success "] = "Mesajınız göndərildi!";
 $lang["alert"] = "Xəta baş verdi!";
+$lang["join"] = "Qatıl";
 
 
 

@@ -70,6 +70,7 @@ $lang["gonder"] = "Send";
 $lang["lokasiya"] = "Location";
 $lang["success"] = "Your message is sent!";
 $lang["alert"] = "Error!";
+$lang["join"] = "Join!";
 
 
 
