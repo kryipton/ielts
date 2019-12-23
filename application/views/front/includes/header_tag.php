@@ -19,9 +19,7 @@
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-google-plus "></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>  
                         <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                     </ul>
                     <!-- End Social -->
@@ -36,7 +34,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-12">
                     <div class="logo">
-                        <a href="index.html"> <img src="<?php echo base_url("public/front/") ?>images/logo/logo-ielts.png" alt="#"></a>
+                        <a href="<?php echo base_url("home")?>"> <img src="<?php echo base_url("public/front/") ?>images/logo/logo-ielts.png" alt="#"></a>
                     </div>
                     <div class="mobile-menu"></div>
                 </div>

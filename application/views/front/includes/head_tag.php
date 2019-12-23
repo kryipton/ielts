@@ -9,7 +9,7 @@
     <!-- Title -->
     <title>IELTS Coaching</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="<?php echo base_url("public/front/") ?>images/logo/logo-ielts.png">
+    <link rel="icon" type="image/png" href="<?php echo base_url("public/front/") ?>images/logo/logo.png">
     <!-- Web Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 

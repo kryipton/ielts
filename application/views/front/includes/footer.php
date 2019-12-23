@@ -91,7 +91,7 @@
                                 <!-- End Social -->
                                 <!-- Copyright -->
                                 <div class="copyright">
-                                    <p>© Copyright 2018 <a href="#">IELTS Coaching</a>. All Rights Reserved</p>
+                                    <p>© Copyright 2019 <a href="#">IELTS Coaching</a>. All Rights Reserved</p>
                                 </div>
                                 <!--/ End Copyright -->
                             </div>
