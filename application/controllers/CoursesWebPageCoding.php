@@ -51,7 +51,7 @@
          if(!empty($all_teacher_ids)){
              $data['teachers'] = $this->db->where_in("id", $all_teacher_ids)->get("teachers")->result_array();
          }else{
-             $data['teachers'];
+             $data['teachers'] = array();
          }
          //bu kursun mellimlerinin cagirilmasi
 
