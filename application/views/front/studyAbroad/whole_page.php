@@ -32,9 +32,7 @@
 
                     <?php echo $about["desc_$lang"] ?>
 
-                    <div class="button">
-                        <a href="#" class="btn"><?php echo $this->lang->line("kurslarimiz")?></a>
-                    </div>
+                    
                 </div>
             </div>
         </div>
