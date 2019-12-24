@@ -50,7 +50,7 @@
                                             $str = "";
                                         }
 
-                                        echo strip_tags(substr($item["desc_$lang"], 0,80) . $str); ?></p>
+                                        echo strip_tags(mb_substr($item["desc_$lang"], 0,80) . $str); ?></p>
                                 </div>
                             <?php }?>
                         </div>
