@@ -161,7 +161,7 @@
                         <th data-orderable="true" class="c_th_max_width"><a>Kursun Səviyyəsi<i class="fas fa-sort ml-1"></i></a></th>
                         <th data-orderable="true" class="c_th_max_width"><a>Sertifikat<i class="fas fa-sort ml-1"></i></a></th>
                         <th data-orderable="true" class="c_th_max_width"><a>qiymətləndirmələr<i class="fas fa-sort ml-1"></i></a></th>
-                        <th data-orderable="true" class="c_th_max_width"><a>qiymətləndirmələr<i class="fas fa-sort ml-1"></i></a></th>
+                        <th data-orderable="true" class="c_th_max_width"><a>Müəllimlər<i class="fas fa-sort ml-1"></i></a></th>
 
 
                         <th data-orderable="false" class="c_operations" style="width: 53px!important;"><a>Operations</a></th>

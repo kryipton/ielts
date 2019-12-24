@@ -13,13 +13,9 @@
 
                             <li><a href="#"><?php echo $this->lang->line("kurslar")?><i class="fa fa-angle-down"></i></a>
                                 <ul class="dropdown">
-                                    <li><a href="<?php echo base_url("$lang/course")?>">Beginner</a></li>
-                                    <li><a href="<?php echo base_url("$lang/course")?>">Pre-Intermediate</a></li>
-                                    <li><a href="<?php echo base_url("$lang/course")?>">Intermediate</a></li>
-                                    <li><a href="<?php echo base_url("$lang/course")?>">Upper-Intermediate</a></li>
-                                    <li><a href="<?php echo base_url("$lang/course")?>">Advanced</a></li>
-                                    <li><a href="<?php echo base_url("$lang/course")?>">Pre-IELTS</a></li>
-                                    <li><a href="<?php echo base_url("$lang/course")?>">IELTS</a></li>
+                                   <?php foreach ($courses as $item){?>
+                                        <li><a href="<?php echo base_url("$lang/course/$item[id]")?>"><?php echo $item["name_$lang"]?></a></li>
+                                    <?php }?>
                                 </ul>
                             </li>
 

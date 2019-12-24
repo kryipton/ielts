@@ -25,7 +25,7 @@
      {
 
          $data["about"]=$this->Core->get_where_row(["id"=>1],"about");
-
+         $data["courses"] = $this->Core->get_desc("course");
          //telebe kurs sayisi counteri ucun
          $data["info"]=$this->Core->get_where_row(["id"=>1],"info");
          //telebe kurs sayisi counteri ucun

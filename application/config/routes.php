@@ -81,7 +81,7 @@ $route['(:any)/message_send'] =  'ContactWebPageCoding/send_message/$1';
 
 
 //----------------------------------------------------Kurslar---------------------------------------
-$route['(:any)/course'] =  'CoursesWebPageCoding/index/$1';
+$route['(:any)/course/(:any)'] =  'CoursesWebPageCoding/index/$1/$2';
 
 
 //----------------------------------------------------Tedbirler---------------------------------------

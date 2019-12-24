@@ -24,15 +24,15 @@
      public function index()
      {
 
-
-         $this->load->view("$this->parent_folder/$this->sub_folder/whole_page");
+         $data["courses"] = $this->Core->get_desc("course");
+         $this->load->view("$this->parent_folder/$this->sub_folder/whole_page", $data);
      }
 
      public function single()
      {
+         $data["courses"] = $this->Core->get_desc("course");
 
-
-         $this->load->view("$this->parent_folder/$this->sub_folder/single_page");
+         $this->load->view("$this->parent_folder/$this->sub_folder/single_page", $data);
      }
 
 

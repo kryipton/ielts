@@ -123,6 +123,7 @@
                         <th data-orderable="true" class="c_th_max_width"><a>Tədbirin Başlama Saatı<i class="fas fa-sort ml-1"></i></a></th>
                         <th data-orderable="true" class="c_th_max_width"><a>Tədbirin Bitmə Saatı<i class="fas fa-sort ml-1"></i></a></th>
                         <th data-orderable="true" class="c_th_max_width"><a>Tədbirin Şəkli<i class="fas fa-sort ml-1"></i></a></th>
+                        <th data-orderable="true" class="c_th_max_width"><a>Tədbirin Qalereyası<i class="fas fa-sort ml-1"></i></a></th>
 
 
                         <th data-orderable="false" class="c_operations" style="width: 53px!important;"><a>Əməliyyatlar</a></th>
