@@ -1099,7 +1099,7 @@ class MY_Controller extends CI_Controller{
                 $html .= '<label for="">'. $splitted_string_array2[1] .'</label>
                         <select name="'. $splitted_string_array2[0] .'" class="mdb-select'. $count .' md-form">';
 
-                $html .= '<option value="'. $table_data_row["id"] .'">'. $table_data_row["name_az"] .'</option>';
+                $html .= '<option value="'. $table_data_row["id"] .'">'. $table_data_row[$splitted_string_array[1]] .'</option>';
 
                 foreach ($table_data as $item){
 

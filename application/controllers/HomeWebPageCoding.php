@@ -23,6 +23,11 @@
 
      public function index()
      {
+
+         $data["contact"] = $this->Core->get_where_row(array("id => 1"), "contact");
+         $data["logo"] = $this->Core->get_where_row(array("id => 1"), "logo");
+         $data["latest_blogs"] = $this->Core->get_desc_limit("blog", 3);
+
          //telebe kurs sayisi counteri ucun
          $data["info"]=$this->Core->get_where_row(["id"=>1],"info");
          //telebe kurs sayisi counteri ucun

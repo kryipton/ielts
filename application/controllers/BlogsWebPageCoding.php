@@ -23,7 +23,9 @@
 
      public function index()
      {
-
+         $data["contact"] = $this->Core->get_where_row(array("id => 1"), "contact");
+         $data["logo"] = $this->Core->get_where_row(array("id => 1"), "logo");
+         $data["latest_blogs"] = $this->Core->get_desc_limit("blog", 3);
          //--------------pagination start------------
          $this->load->library('pagination');
 
@@ -88,6 +90,10 @@
 
      public function single($lang, $id)
      {
+
+         $data["contact"] = $this->Core->get_where_row(array("id => 1"), "contact");
+         $data["logo"] = $this->Core->get_where_row(array("id => 1"), "logo");
+         $data["latest_blogs"] = $this->Core->get_desc_limit("blog", 3);
 
          $data["blog"]=$this->Core->get_where_row(["id"=>$id],"blog");
          $data["blog_category"] = $this->Core->get_where_row(array("id" => $data["blog"]["blog_category_id"]), "blog_category");

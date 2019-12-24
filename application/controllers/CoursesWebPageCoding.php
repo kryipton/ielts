@@ -31,7 +31,9 @@
              redirect(base_url("$lang/home"));
          }
          //single kursun cagirilmasi
-
+         $data["contact"] = $this->Core->get_where_row(array("id => 1"), "contact");
+         $data["logo"] = $this->Core->get_where_row(array("id => 1"), "logo");
+         $data["latest_blogs"] = $this->Core->get_desc_limit("blog", 3);
 
          //bu kursun mellimlerinin cagirilmasi
          $all_teacher_for_courses = $this->Core->get_where_result_desc(array("course_id" => $id), "course_teachers");

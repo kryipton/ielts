@@ -122,7 +122,7 @@ class Panel_admin_page_blog extends MY_Controller{
         $config["label_name_and_input_name"] = $this->label_name_and_input_name;
         $config["input_name_type"] = $this->input_name_type;
         $config["select_name_and_table_name"] = array(
-            "blog_category_id.Kateqoriyanın Adı" => "blog_category.name_az",
+            "blog_category_id.Kateqoriyanın Adı" => "blog_category.category_name_az",
         );
         $config["update_link"] = $this->update_link;
         $config["add_link"]    = $this->add_link;
@@ -173,7 +173,7 @@ class Panel_admin_page_blog extends MY_Controller{
         $config["label_name_and_input_name"] = $this->label_name_and_input_name;
         $config["input_name_type"] = $this->input_name_type;
         $config["select_name_and_table_name"] = array(
-            "blog_category_id.Kateqoriyanın Adı" => "blog_category.name_az",
+            "blog_category_id.Kateqoriyanın Adı" => "blog_category.category_name_az",
         );
 
         echo $this->update_view($config);
