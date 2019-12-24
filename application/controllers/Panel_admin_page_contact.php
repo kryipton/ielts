@@ -68,7 +68,6 @@ class Panel_admin_page_contact extends MY_Controller{
 
             "Youtube" => "youtube",
 
-            "Müəllif hüquqları" => "copy_right",
 
             "Açılış Vaxdı" => "start_time",
             "Bağıanış Vaxdı" => "end_time",
@@ -95,7 +94,6 @@ class Panel_admin_page_contact extends MY_Controller{
             "instagram" => "text",
             "youtube" => "text",
             "twitter" => "text",
-            "copy_right" => "text",
 
             "start_time" => "time",
             "end_time" => "time",
@@ -122,7 +120,6 @@ class Panel_admin_page_contact extends MY_Controller{
             "instagram" => "instagram",
             "youtube" => "youtube",
             "twitter" => "twitter",
-            "copy_right" => "copy_right",
             "start_time" => "start_time",
             "end_time" => "end_time",
 

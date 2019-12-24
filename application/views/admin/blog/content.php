@@ -107,6 +107,7 @@
                         <th data-orderable="true" class="c_th_max_width"><a>Bloqun Haqqında En<i class="fas fa-sort ml-1"></i></a></th>
                         <th data-orderable="true" class="c_th_max_width"><a>Bloqun Haqqında Ru<i class="fas fa-sort ml-1"></i></a></th>
                         <th data-orderable="true" class="c_th_max_width"><a>Şəkil<i class="fas fa-sort ml-1"></i></a></th>
+                        <th data-orderable="true" class="c_th_max_width"><a>Bloqun Tarixi<i class="fas fa-sort ml-1"></i></a></th>
 
 
                         <th data-orderable="false" class="c_operations" style="width: 53px!important;"><a>Əməliyyatlar</a></th>

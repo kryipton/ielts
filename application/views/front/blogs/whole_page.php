@@ -40,7 +40,19 @@
                             <a><i class="fa fa-user"></i>By: Admin</a>
                             <a><i class="fa fa-list"></i><?php echo $item["category_name_$lang"]?></a>
                         </div>
-                        <p><?php echo $item["desc_$lang"]?></p>
+                        <p>
+
+                            <?php
+
+                            if (strlen($item["desc_$lang"]) >= 100){
+                                $str = "...";
+                            }else{
+                                $str = "";
+                            }
+
+                            echo strip_tags(mb_substr($item["desc_$lang"], 0,100) . $str); ?>
+
+                        </p>
                         <div class="button">
                             <a href="<?php echo base_url("$lang/blog/single/$item[id]")?>" class="btn"><?php echo $this->lang->line("etrafli")?><i class="fa fa-angle-double-right"></i></a>
                         </div>

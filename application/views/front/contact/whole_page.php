@@ -74,7 +74,7 @@
                     <div class="contact-info">
                         <div class="icon"><i class="fa fa-phone"></i></div>
                         <h3><?php echo $this->lang->line("telefon")?></h3>
-                        <p><?php echo $contact["email"]?></p>
+                        <p><?php echo $contact["phone"]?></p>
                     </div>
                 </div>
             </div>

@@ -91,6 +91,9 @@ $lang["kursda_istirak_edecek_maksimum_telebe_sayi"] = "Tələbə Sayı";
 $lang["sertifikat"] = "Sertifikatlar";
 $lang["qiymetlemdirmeler"] = "Qiymətləndirmələr";
 $lang["kateqoriya"] = "Kateqoriya";
+$lang["useful_links"] = "Faydalı Linklər";
+$lang["statik_text"] = "burda statsik text olacaq";
+
 
 
 
