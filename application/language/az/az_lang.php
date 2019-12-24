@@ -72,7 +72,6 @@ $lang["join"] = "Qatıl";
 
 
 
-
 //-----------------------------
 $lang["xaricde_tehsil"] = "Xaricdə Təhsil";
 $lang["bloglar"] = "Bloqlar";
@@ -82,6 +81,16 @@ $lang["Faq"] = "Faq";
 
 
 
+//====diger langlara da qosmaq lazimdi
+$lang["course_features"] = "Kursa Daxildir";
+$lang["leksiyalar"] = "Leksiyalar";
+$lang["quizler"] = "İmtahanlar";
+$lang["kursun_muddeti"] = "Kursun Müddəti";
+$lang["kursun_seviyesi"] = "Kursun Səviyyəsi";
+$lang["kursda_istirak_edecek_maksimum_telebe_sayi"] = "Tələbə Sayı";
+$lang["sertifikat"] = "Sertifikatlar";
+$lang["qiymetlemdirmeler"] = "Qiymətləndirmələr";
+$lang["kateqoriya"] = "Kateqoriya";
 
 
 

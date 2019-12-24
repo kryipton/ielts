@@ -23,6 +23,7 @@
 
      public function index()
      {
+         $data["courses"] = $this->Core->get_desc("course");
          $data['events'] = $this->Core->get_desc('events');
          $data['event_about'] = $this->Core->get_row('event_about');
          $this->load->view("$this->parent_folder/$this->sub_folder/whole_page",$data);
@@ -30,6 +31,7 @@
 
      public function single($lang,$id)
      {
+         $data["courses"] = $this->Core->get_desc("course");
          $data['event'] = $this->Core->get_where_row(['id' => $id],'events');
          $data['images'] = $this->Core->get_where_result_desc(['id' => $data['event']['id']],'event_gallery');
          $this->load->view("$this->parent_folder/$this->sub_folder/single_page",$data);
