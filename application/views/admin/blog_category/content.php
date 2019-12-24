@@ -72,10 +72,9 @@
                         <th data-orderable="true" class="c_th_max_width"><a>Bloqun Adı Az<i class="fas fa-sort ml-1"></i></a></th>
                         <th data-orderable="true" class="c_th_max_width"><a>Bloqun Adı En<i class="fas fa-sort ml-1"></i></a></th>
                         <th data-orderable="true" class="c_th_max_width"><a>Bloqun Adı Ru<i class="fas fa-sort ml-1"></i></a></th>
-                        <th data-orderable="true" class="c_th_max_width"><a>Bloqun Şəkli<i class="fas fa-sort ml-1"></i></a></th>
 
 
-                        <th data-orderable="false" class="c_operations" style="width: 53px!important;"><a>Operations</a></th>
+                        <th data-orderable="false" class="c_operations" style="width: 53px!important;"><a>Əməliyyatlar</a></th>
 
 
                     </tr>

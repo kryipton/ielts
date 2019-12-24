@@ -1,5 +1,5 @@
 <?php $this->load->view("front/includes/top_all"); ?>
-
+<?php $lang = $this->session->userdata("dil")?>
 
 
 <!-- Contact Us -->
@@ -8,8 +8,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title">
-                    <h2><span>Contact</span> Information</h2>
-                    <p>Mauris at varius orci. Vestibulum interdum felis eu nisl pulvinar, quis ultricies nibh. Sed ultricies ante vitae laoreet sagittis. In pellentesque viverra purus. Sed risus est, molestie nec hendrerit hendrerit, sollicitudin nec ante.  </p>
+                    <h2><?php echo $contact["name_$lang"]?></h2>
+                    <p><?php echo $contact["desc_$lang"]?></p>
                 </div>
             </div>
         </div>
@@ -27,22 +27,22 @@
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="form-head">
                         <!-- Form -->
-                        <form class="form" action="http://themelamp.com/html/learnedu/mail/mail.php">
+                        <form class="form">
                             <div class="form-group">
-                                <input name="name" type="text" placeholder="Enter Name">
+                                <input name="name" type="text" placeholder="<?php echo $this->lang->line("ad_soyad")?>">
                             </div>
                             <div class="form-group">
-                                <input name="email" type="email" placeholder="Email Address">
+                                <input name="email" type="email" placeholder="<?php echo $this->lang->line("mail")?>">
                             </div>
                             <div class="form-group">
-                                <input name="subject" type="text" placeholder="Mobile number">
+                                <input name="subject" type="text" placeholder="<?php echo $this->lang->line("telefon")?>">
                             </div>
                             <div class="form-group">
-                                <textarea name="message" placeholder="Comment"></textarea>
+                                <textarea name="message" placeholder="<?php echo $this->lang->line("mesajiniz")?>"></textarea>
                             </div>
                             <div class="form-group">
                                 <div class="button">
-                                    <button type="submit" class="btn primary">Post Comment</button>
+                                    <button type="submit" class="btn primary"><?php echo $this->lang->line("gonder")?></button>
                                 </div>
                             </div>
                         </form>
@@ -57,25 +57,24 @@
                     <!-- Contact-Info -->
                     <div class="contact-info">
                         <div class="icon"><i class="fa fa-map"></i></div>
-                        <h3>Location</h3>
-                        <p>Afiyaddin Calilov 20</p>
-                        <p>Baku, Azerbaijan</p>
+                        <h3><?php echo $this->lang->line("lokasiya")?></h3>
+                        <?php echo $contact["address_$lang"]?>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
                     <!-- Contact-Info -->
                     <div class="contact-info">
                         <div class="icon"><i class="fa fa-envelope"></i></div>
-                        <h3>Email Address</h3>
-                        <a href="mailto:hi@ieltscoaching.az">hi@ieltscoaching.az</a>
+                        <h3><?php echo $this->lang->line("mail")?></h3>
+                        <a href="mailto:<?php echo $contact["email"]?>"><?php echo $contact["email"]?></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
                     <!-- Contact-Info -->
                     <div class="contact-info">
                         <div class="icon"><i class="fa fa-phone"></i></div>
-                        <h3>Get in Touch</h3>
-                        <p>(+994) 55 520 99 19</p>
+                        <h3><?php echo $this->lang->line("telefon")?></h3>
+                        <p><?php echo $contact["email"]?></p>
                     </div>
                 </div>
             </div>
