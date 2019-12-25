@@ -148,7 +148,9 @@ class Panel_admin_page_events extends MY_Controller{
     public function get_data()
     {
 
-        $config["additional_links"] = array();
+        $config["additional_links"] = array(
+            "<i class=\"fas fa-images\"></i>" => "Panel_admin_page_events_gallery/index/",
+        );
         $config["table_name"] = $this->table_name;
         $config["upload_path"] = $this->upload_path;
         $config["delete_link"] = $this->delete_link;

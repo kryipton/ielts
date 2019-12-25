@@ -31,11 +31,11 @@ class Panel_admin_page_blog_category extends MY_Controller{
         $this->table_name = "blog_category";
 
 //      sekilleri ve fayllari yukleyeceyimiz yer meselen: base_url("uploads/teachers/")
-        $this->upload_path = "uploads/blog_category/";
+        $this->upload_path = "";
 
 //      eger sekil veya file varsa tablenin hansi fieldinnen adini goturub papkadan silsin
         $this->table_file_field_names = array(
-            "img",
+
         );
 
 //==============================================================================================
@@ -44,31 +44,23 @@ class Panel_admin_page_blog_category extends MY_Controller{
         $this->field_names = $this->Core->list_fields($this->table_name);
 
         $this->label_name_and_input_name = array(
-            "Bloq Kateqoriyanın Adı Az" => "(group1)name_az(required)",
-            "Bloq Kateqoriyanın Adı En" => "(group1)name_en(required)",
-            "Bloq Kateqoriyanın Adı Ru" => "(group1)name_ru(required)",
+            "Bloq Kateqoriyanın Adı Az" => "(group1)category_name_az(required)",
+            "Bloq Kateqoriyanın Adı En" => "(group1)category_name_en(required)",
+            "Bloq Kateqoriyanın Adı Ru" => "(group1)category_name_ru(required)",
 
-            "Bloq Kateqoriyanın Şəkli" => "img",
 
         );
 
         $this->input_name_type = array(
-            "name_az" => "text",
-            "name_en" => "text",
-            "name_ru" => "text",
-
-            "img" => "file",
-
+            "category_name_az" => "text",
+            "category_name_en" => "text",
+            "category_name_ru" => "text",
         );
 
         $this->add_update_input_array = array(
-            "name_az" => "name_az",
-            "name_en" => "name_en",
-            "name_ru" => "name_ru",
-
-            "img" => "(file)img",
-
-
+            "category_name_az" => "category_name_az",
+            "category_name_en" => "category_name_en",
+            "category_name_ru" => "category_name_ru",
         );
 
 

@@ -24,10 +24,10 @@ class Panel_admin_page_faqs_about extends MY_Controller{
         parent::__construct();
 
 //      adminin icindeki papkanin adi
-        $this->view_folder = "teachers_about";
+        $this->view_folder = "faqs_about";
 
 //      tablemizin adi
-        $this->table_name = "teachers_about";
+        $this->table_name = "faqs_about";
 
 //      sekilleri ve fayllari yukleyeceyimiz yer meselen: base_url("uploads/teachers/")
         $this->upload_path = "";
@@ -42,13 +42,13 @@ class Panel_admin_page_faqs_about extends MY_Controller{
 
         $this->label_name_and_input_name = array(
 
-            "Müəllimlər Haqqında Başlıqı Az" => "(group2)name_az",
-            "Müəllimlər Haqqında Başlıqı En" => "(group2)name_en",
-            "Müəllimlər Haqqında Başlıqı Ru" => "(group2)name_ru",
+            "Faqs Haqqında Başlıqı Az" => "(group1)name_az",
+            "Faqs Haqqında Başlıqı En" => "(group1)name_en",
+            "Faqs Haqqında Başlıqı Ru" => "(group1)name_ru",
 
-            "Müəllimlər Haqqında Az" => "(group2)desc_az",
-            "Müəllimlər Haqqında En" => "(group2)desc_en",
-            "Müəllimlər Haqqında Ru" => "(group2)desc_ru",
+            "Faqs Haqqında Az" => "(group2)desc_az",
+            "Faqs Haqqında En" => "(group2)desc_en",
+            "Faqs Haqqında Ru" => "(group2)desc_ru",
 
 
         );

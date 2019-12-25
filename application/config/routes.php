@@ -81,7 +81,7 @@ $route['(:any)/message_send'] =  'ContactWebPageCoding/send_message/$1';
 
 
 //----------------------------------------------------Kurslar---------------------------------------
-$route['(:any)/course'] =  'CoursesWebPageCoding/index/$1';
+$route['(:any)/course/(:any)'] =  'CoursesWebPageCoding/index/$1/$2';
 
 
 //----------------------------------------------------Tedbirler---------------------------------------
@@ -96,8 +96,9 @@ $route['(:any)/teacher/single/(:any)'] =  'TeachersWebPageCoding/single/$1/$2';
 
 
 //----------------------------------------------------Bloqlar---------------------------------------
+$route['(:any)/blogs/(:any)'] =  'BlogsWebPageCoding/index/$1/$2';
 $route['(:any)/blogs'] =  'BlogsWebPageCoding/index/$1';
-$route['(:any)/blog/single'] =  'BlogsWebPageCoding/single/$1';
+$route['(:any)/blog/single/(:any)'] =  'BlogsWebPageCoding/single/$1/$2';
 
 
 //----------------------------------------------------Turlar---------------------------------------

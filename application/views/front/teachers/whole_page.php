@@ -8,8 +8,8 @@
             <div class="col-12">
                 <h2><?php echo $this->lang->line("muellimler") ?></h2>
                 <ul class="bread-list">
-                    <li><a href="index.html"><?php echo $this->lang->line("ana_sehife") ?><i class="fa fa-angle-right"></i></a></li>
-                    <li class="active"><a href="team2.html"><?php echo $this->lang->line("muellimler") ?></a></li>
+                    <li><a href="<?php echo base_url("$lang/home")?>"><?php echo $this->lang->line("ana_sehife") ?><i class="fa fa-angle-right"></i></a></li>
+                    <li class="active"><a ><?php echo $this->lang->line("muellimler") ?></a></li>
                 </ul>
             </div>
         </div>
@@ -42,9 +42,9 @@
                         <h4 class="name"><?php echo $teacher['name_'.$lang] ?><span><?php echo $teacher['title_'.$lang] ?></span></h4>
 
                         <ul class="social">
-                            <li><a href="https://facebook.com/<?php echo $teacher['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://twitter.com/<?php echo $teacher['twitter'] ?>"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://linkedin.com/<?php echo $teacher['linkedln'] ?>"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="<?php echo $teacher['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="<?php echo $teacher['twitter'] ?>"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="<?php echo $teacher['linkedln'] ?>"><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>

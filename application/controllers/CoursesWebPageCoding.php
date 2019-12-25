@@ -21,11 +21,44 @@
 
      }
 
-     public function index()
+     public function index($lang, $id)
      {
 
+         //single kursun cagirilmasi
+         $data["course"] = $this->Core->get_where_row(array("id" => $id), "course");
+         $lang = $this->session->userdata("dil");
+         if (empty($data["course"])){
+             redirect(base_url("$lang/home"));
+         }
+         //single kursun cagirilmasi
+         $data["contact"] = $this->Core->get_where_row(array("id => 1"), "contact");
+         $data["logo"] = $this->Core->get_where_row(array("id => 1"), "logo");
+         $data["latest_blogs"] = $this->Core->get_desc_limit("blog", 3);
 
-         $this->load->view("$this->parent_folder/$this->sub_folder/single_page");
+         //bu kursun mellimlerinin cagirilmasi
+         $all_teacher_for_courses = $this->Core->get_where_result_desc(array("course_id" => $id), "course_teachers");
+
+         $all_teacher_ids = [];
+
+         if (!empty($all_teacher_for_courses)){
+
+             foreach ($all_teacher_for_courses as $item){
+                 $all_teacher_ids[] = $item["teacher_id"];
+             }
+
+         }
+
+         if(!empty($all_teacher_ids)){
+             $data['teachers'] = $this->db->where_in("id", $all_teacher_ids)->get("teachers")->result_array();
+         }else{
+             $data['teachers'] = array();
+         }
+         //bu kursun mellimlerinin cagirilmasi
+
+
+         $data["courses"] = $this->Core->get_desc("course");
+
+         $this->load->view("$this->parent_folder/$this->sub_folder/single_page", $data);
      }
 
 

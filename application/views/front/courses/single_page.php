@@ -1,13 +1,14 @@
 <?php $this->load->view("front/includes/top_all"); ?>
+<?php $lang = $this->session->userdata("dil");?>
 <!-- Courses -->
 <section class="breadcrumbs overlay">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2>Course Pages</h2>
+                <h2><?php echo $course["name_$lang"]?></h2>
                 <ul class="bread-list">
-                    <li><a href="index.html">Home<i class="fa fa-angle-right"></i></a></li>
-                    <li class="active"><a href="course-single.html">Course Single</a></li>
+                    <li><a href="<?php echo base_url("$lang/home")?>"><?php echo $this->lang->line("ana_sehife")?><i class="fa fa-angle-right"></i></a></li>
+                    <li class="active"><a><?php echo $course["name_$lang"]?></a></li>
                 </ul>
             </div>
         </div>
@@ -26,7 +27,7 @@
                             <!-- Single Course -->
                             <div class="single-course">
                                 <div class="course-head">
-                                    <img src="<?php echo base_url("public/front/") ?>images/course/course-single.jpg" alt="#">
+                                    <img src="<?php echo base_url("uploads/course/$course[img]") ?>" alt="#">
                                 </div>
                             </div>
                             <!--/ End Single Course -->
@@ -35,54 +36,54 @@
                             <!-- Course Features -->
                             <div class="course-feature">
                                 <div class="feature-main">
-                                    <h4>Course Features</h4>
+                                    <h4><?php echo $this->lang->line("course_features")?></h4>
                                     <!-- Single Feature -->
                                     <div class="single-feature">
                                         <i class="fa fa-files-o"></i>
-                                        <span class="label">Lectures</span>
-                                        <span class="value">8</span>
+                                        <span class="label"><?php echo $this->lang->line("leksiyalar") ?></span>
+                                        <span class="value"><?php echo $course["lectures"]?></span>
                                     </div>
                                     <!--/ End Single Feature -->
                                     <!-- Single Feature -->
                                     <div class="single-feature">
                                         <i class="fa fa-puzzle-piece"></i>
-                                        <span class="label">Quizzes</span>
-                                        <span class="value">1</span>
+                                        <span class="label"><?php echo $this->lang->line("quizler") ?></span>
+                                        <span class="value"><?php echo $course["quizzes"]?></span>
                                     </div>
                                     <!--/ End Single Feature -->
                                     <!-- Single Feature -->
                                     <div class="single-feature">
                                         <i class="fa fa-clock-o"></i>
-                                        <span class="label">Duration</span>
-                                        <span class="value">1 Year</span>
+                                        <span class="label"><?php echo $this->lang->line("kursun_muddeti") ?></span>
+                                        <span class="value"><?php echo $course["duration"]?></span>
                                     </div>
                                     <!--/ End Single Feature -->
                                     <!-- Single Feature -->
                                     <div class="single-feature">
                                         <i class="fa fa-magic"></i>
-                                        <span class="label">Skill Level</span>
-                                        <span class="value">Beginner</span>
+                                        <span class="label"><?php echo $this->lang->line("kursun_seviyesi") ?></span>
+                                        <span class="value"><?php echo $course["skill_level"]?></span>
                                     </div>
                                     <!--/ End Single Feature -->
                                     <!-- Single Feature -->
                                     <div class="single-feature">
                                         <i class="fa fa-user"></i>
-                                        <span class="label">Students</span>
-                                        <span class="value">50</span>
+                                        <span class="label"><?php echo $this->lang->line("kursda_istirak_edecek_maksimum_telebe_sayi") ?></span>
+                                        <span class="value"><?php echo $course["seats"]?></span>
                                     </div>
                                     <!--/ End Single Feature -->
                                     <!-- Single Feature -->
                                     <div class="single-feature">
                                         <i class="fa fa-check-square-o"></i>
-                                        <span class="label">Certificate</span>
-                                        <span class="value">Yes</span>
+                                        <span class="label"><?php echo $this->lang->line("sertifikat") ?></span>
+                                        <span class="value"><?php echo $course["certificate"]?></span>
                                     </div>
                                     <!--/ End Single Feature -->
                                     <!-- Single Feature -->
                                     <div class="single-feature">
                                         <i class="fa fa-check-square-o"></i>
-                                        <span class="label">Assessments</span>
-                                        <span class="value">Yes</span>
+                                        <span class="label"><?php echo $this->lang->line("qiymetlemdirmeler") ?></span>
+                                        <span class="value"><?php echo $course["assessments"]?></span>
                                     </div>
                                     <!--/ End Single Feature -->
                                 </div>
@@ -96,53 +97,43 @@
                             <div class="course-meta">
                                 <!-- Course Info -->
                                 <div class="course-info">
-                                    <div class="single-info author">
-                                        <img src="<?php echo base_url("public/front/") ?>images/course/khumar.jfif" alt="#">
-                                        <h4>Teacher:<a href="#"><span>Khumar Karimova</span></a></h4>
-                                    </div>
+
+                                    <?php foreach ($teachers as $item){?>
+                                        <div class="single-info author">
+                                            <img src="<?php echo base_url("uploads/teachers/$item[img]")?>" alt="#">
+                                            <h4><?php echo $this->lang->line("muellimler")?>:<a href="<?php echo base_url("$lang/teacher/single/$item[id]")?>"><span><?php echo $item["name_$lang"]?></span></a></h4>
+                                        </div>
+                                    <?php }?>
+
                                     <div class="single-info category">
                                         <i class="fa fa-bolt"></i>
-                                        <h4>Category<a href="#"><span>IELTS</span></a></h4>
+                                        <h4><?php echo $this->lang->line("kateqoriya");?>:<a><span><?php echo $course["name_$lang"]?></span></a></h4>
                                     </div>
                                     <div class="single-info s-enroll">
                                         <i class="fa fa-users"></i>
-                                        <h4>Enrolled:<span>302 Student Enrolled</span></h4>
+                                        <h4><?php echo $this->lang->line("kursda_istirak_edecek_maksimum_telebe_sayi");?>:<span><?php echo $course["seats"]?></span></h4>
                                     </div>
                                     <div class="single-info rattings">
                                         <i class="fa fa-clock-o"></i>
-                                        <h4>Course Time:<span>05 Years</span></h4>
+                                        <h4><?php echo $this->lang->line("kursun_muddeti");?>:<span><?php echo $course["duration"]?></span></h4>
                                     </div>
                                 </div>
                                 <!--/ End Course Info -->
+
+
                                 <!-- Course Price -->
                                 <div class="course-price">
-                                    <p>$330</p>
-                                    <a href="#" class="btn"><i class="fa fa-users"></i>Enroll Now</a>
+                                    <p>$<?php echo $course["price"]?></p>
+<!--                                    <a href="#" class="btn"><i class="fa fa-users"></i>--><?php //echo $this->lang->line("join")?><!--</a>-->
                                 </div>
                                 <!--/ End Course Price -->
                             </div>
                             <!--/ End Course Meta -->
                         </div>
                         <div class="col-12">
-                            <div class="content">
-                                <h2><a href="#">Beginner course</a></h2>
-                                <p>The International English Language Testing System (IELTS) measures the language proficiency of people who want to study or work where English is used as a language of communication. It uses a nine-band scale to clearly identify levels of proficiency, from non-user (band score 1) through to expert (band score 9).</p>
-                                <p>IELTS treats all test takers with the utmost fairness and respect by actively avoiding cultural bias, and  accepting all standard varieties of native-speaker English, including North American, British, Australian and New Zealand English.</p>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="course-required">
-                                <h4>Course Requirement</h4>
-                                <ul>
-                                    <li><span>02</span>World's Fast Online Courses.</li>
-                                    <li><span>01</span>Over 34 lectures and 99M hours of content!</li>
-                                    <li><span>03</span>Learn English at your home!</li>
-                                    <li><span>04</span>Best Online tutorial platform</li>
-                                    <li><span>05</span>With Available zero to hero course</li>
-                                    <li><span>06</span>We have 300M+ Active Student.</li>
-                                    <li><span>07</span>Improve your skill with learning our courses</li>
-                                </ul>
-                            </div>
+
+                            <?php echo $course["desc_$lang"]?>
+
                         </div>
                     </div>
                 </div>

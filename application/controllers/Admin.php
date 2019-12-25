@@ -9,6 +9,7 @@ class Admin extends CI_Controller{
 
     public function index()
     {
+
         if (empty($this->session->userdata("user"))){
 
             $this->load->view('admin/login/content');
@@ -59,6 +60,7 @@ class Admin extends CI_Controller{
     {
         if (!empty($this->session->userdata("user"))){
             $this->session->unset_userdata("user");
+            $this->session->unset_userdata("user_role");
             $this->session->set_flashdata("success", "Çıxıldı");
             redirect(base_url("Admin"));
         }else{

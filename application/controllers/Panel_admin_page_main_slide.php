@@ -44,13 +44,13 @@ class Panel_admin_page_main_slide extends MY_Controller{
         $this->field_names = $this->Core->list_fields($this->table_name);
 
         $this->label_name_and_input_name = array(
-            "Birinci Başlıqın Adı Az" => "(group1)title1_az(required)",
-            "Birinci Başlıqın Adı En" => "(group1)title1_en(required)",
-            "Birinci Başlıqın Adı Ru" => "(group1)title1_ru(required)",
+            "Birinci Başlıqın Adı Az" => "(group1)title1_az",
+            "Birinci Başlıqın Adı En" => "(group1)title1_en",
+            "Birinci Başlıqın Adı Ru" => "(group1)title1_ru",
 
-            "İkinci Başlıqın Adı Az" => "(group2)title2_az(required)",
-            "İkinci Başlıqın Adı En" => "(group2)title2_en(required)",
-            "İkinci Başlıqın Adı Ru" => "(group2)title2_ru(required)",
+            "İkinci Başlıqın Adı Az" => "(group2)title2_az",
+            "İkinci Başlıqın Adı En" => "(group2)title2_en",
+            "İkinci Başlıqın Adı Ru" => "(group2)title2_ru",
 
             "Slaydın linki" => "link",
 

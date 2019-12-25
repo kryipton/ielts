@@ -2,14 +2,34 @@
 <!--tabledeki fieldleri gizletmek ucun olan style bunu external css in icinde yazma yoxsa diger seyfelerdeki tablelerde korlanar-->
 <style>
     th:nth-child(2){
-        display: none;
+        display: none!important;
     }
 
     td:nth-child(2){
+        display: none!important;
+    }
+
+    th:nth-child(3){
+        display: none!important;
+    }
+
+    td:nth-child(3){
+        display: none!important;
+    }
+
+    .c_row_update{
         display: none;
     }
 
     .dt-buttons{
+        display: none;
+    }
+
+    .c_row_create{
+        display: none;
+    }
+
+    #datatable_filter{
         display: none;
     }
 
@@ -19,32 +39,20 @@
 
 <section>
 
+
     <div class="card card-cascade narrower z-depth-0 pb-4">
 
-        <!--tablenin basliqi-->
-        <div
-            class="view view-cascade gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center">
 
-            <div style="visibility: hidden;">
-                <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i
-                        class="fas fa-th-large mt-0"></i></button>
-                <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i
-                        class="fas fa-columns mt-0"></i></button>
+        <form action   =   "<?php echo base_url("Panel_admin_page_events_gallery/add/$id")?>"
+              data-url =   "<?php echo base_url("Panel_admin_page_events_gallery/add/$id")?>"
+              class="dropzone c_dropzone"
+              enctype="multipart/form-data"
+              id="dropzone">
+            <div class="fallback">
+                <input name="file" type="file" multiple style="visibility: hidden;"/>
             </div>
 
-            <a class="white-text mx-3">Bloq Kateqoriyası</a>
-
-            <div style="visibility: hidden;">
-                <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i
-                        class="fas fa-pencil-alt mt-0"></i></button>
-                <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i
-                        class="fas fa-eraser mt-0"></i></button>
-                <button type="button" class="btn btn-outline-white btn-rounded btn-sm px-2"><i
-                        class="fas fa-info-circle mt-0"></i></button>
-            </div>
-
-        </div>
-        <!--tablenin basliqi-->
+        </form>
 
 
         <div class="px-4">
@@ -69,12 +77,11 @@
 
 
                         <th data-orderable="true" class="c_th_max_width"><a>id<i class="fas fa-sort ml-1"></i></a></th>
-                        <th data-orderable="true" class="c_th_max_width"><a>Bloqun Adı Az<i class="fas fa-sort ml-1"></i></a></th>
-                        <th data-orderable="true" class="c_th_max_width"><a>Bloqun Adı En<i class="fas fa-sort ml-1"></i></a></th>
-                        <th data-orderable="true" class="c_th_max_width"><a>Bloqun Adı Ru<i class="fas fa-sort ml-1"></i></a></th>
+                        <th data-orderable="true" class="c_th_max_width"><a>event_id<i class="fas fa-sort ml-1"></i></a></th>
+                        <th data-orderable="true" class="c_th_max_width"><a>Şəklin adı<i class="fas fa-sort ml-1"></i></a></th>
 
 
-                        <th data-orderable="false" class="c_operations" style="width: 53px!important;"><a>Əməliyyatlar</a></th>
+                        <th data-orderable="false" class="c_operations" style="width: 53px!important;"><a>Operations</a></th>
 
 
                     </tr>
