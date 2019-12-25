@@ -32,7 +32,7 @@
 
                     <?php echo $about["desc_$lang"] ?>
 
-                    
+
                 </div>
             </div>
         </div>
