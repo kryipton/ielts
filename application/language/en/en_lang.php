@@ -81,4 +81,16 @@ $lang["bloglar"] = "Blogs";
 $lang["Faq"] = "Faq";
 
 
+$lang["course_features"] = "Course Features";
+$lang["leksiyalar"] = "Lectures";
+$lang["quizler"] = "Exams";
+$lang["kursun_muddeti"] = "Duration of the course";
+$lang["kursun_seviyesi"] = "Course Level";
+$lang["kursda_istirak_edecek_maksimum_telebe_sayi"] = "Student count";
+$lang["sertifikat"] = "Certificates";
+$lang["qiymetlemdirmeler"] = "Assessments";
+$lang["kateqoriya"] = "Category";
+$lang["useful_links"] = "Useful Links";
+$lang["statik_text"] = "Our company is aimed to help people who are taking IELTS exam. You can learn lots of tips and tricks, and get useful inormation.";
+
 

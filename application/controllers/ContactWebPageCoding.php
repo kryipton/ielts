@@ -37,29 +37,44 @@
          $mail=strip_tags($this->input->post("email"));
          $phone=strip_tags($this->input->post("phone"));
          $msg=strip_tags($this->input->post("message"));
-         $config = Array(
-             'protocol' => 'smtp',
-             'smtp_host' => 'ssl://smtp.googlemail.com',
-             'smtp_port' => 465,
-             'smtp_user' => 'testermail0777@gmail.com',
-             'smtp_pass' => 'testerCODE',
-             'mailtype'  => 'html',
-             'charset'  => 'html',
-             'wordwrap'  => TRUE, );
 
-         $this->load->library("email");
-         $this->email->initialize($config);
-         $this->email->set_newline("\r\n");
-         $this->email->from('testermail0777@gmail.com', $this->input->post('name'));
-         $this->email->to("mutalib0101@gmail.com");
-         $this->email->subject(' Ielts Coaching  ');
-         $this->email->message("$name adlı şəxsdən mesaj:<br> $msg <br> <br> <strong>Şəxslə əlaqə:</strong> <br> $mail <br> $phone") ;
-         $this->email->send();
+         if (!empty($name) && !empty($mail) && !empty($phone) && !empty($msg) ) {
+             $config = Array(
+                 'protocol' => 'smtp',
+                 'smtp_host' => 'ssl://smtp.googlemail.com',
+                 'smtp_port' => 465,
+                 'smtp_user' => 'testermail0777@gmail.com',
+                 'smtp_pass' => 'testerCODE',
+                 'mailtype' => 'html',
+                 'charset' => 'html',
+                 'wordwrap' => TRUE,);
 
-         $this->session->set_flashdata("sccs", "Mesajınız göndərildi!");
+             $this->load->library("email");
+             $this->email->initialize($config);
+             $this->email->set_newline("\r\n");
+             $this->email->from('testermail0777@gmail.com', $this->input->post('name'));
+             $this->email->to("mutalib0101@gmail.com");
+             $this->email->subject(' Ielts Coaching  ');
+             $this->email->message("$name adlı şəxsdən mesaj:<br> $msg <br> <br> <strong>Şəxslə əlaqə:</strong> <br> $mail <br> $phone");
+             $this->email->send();
 
-         redirect(base_url(""));
+
+             $data= [
+                 "name_surname" => $name,
+                 "email" => $mail,
+                 "phone" => $phone,
+                 "text" => $msg
+             ];
+             $this->Core->add($data,"messages");
+
+             $this->session->set_flashdata("sccs", "Mesajınız göndərildi! Sizinlə tezliklə əlaqə saxlanılacaqdır.");
+         }else{
+             $this->session->set_flashdata("alert", "Mesajınız göndərilə bilmədi!");
+         }
+
+           redirect($_SERVER['HTTP_REFERER']);
      }
+
 
 
  }

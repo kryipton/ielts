@@ -49,7 +49,10 @@
                         <!-- Single Course -->
                         <div class="single-course">
                             <div class="course-head overlay">
-                                <img src="<?php echo base_url("uploads/course/").$item["img"] ?>" alt="#">
+                                <img src="<?php echo base_url("uploads/course/").$item["img"] ?>"  style="
+    height: 264px!important;
+    width: 354px!important;
+    object-fit: cover!important; alt="#">
                                 <a href="<?php echo base_url("$lang/course/").$item["id"] ?>" class="btn"><i class="fa fa-link"></i></a>
                             </div>
                             <div class="single-content">
@@ -87,7 +90,15 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1">
+
+                <?php if (!empty($this->session->flashdata("sccs"))){ ?>
+                    <div class="alert alert-success"><?php echo $this->session->flashdata("sccs")?></div>
+                <?php }?>
+                <?php if (!empty($this->session->flashdata("alert"))){ ?>
+                    <div class="alert alert-danger"><?php echo $this->session->flashdata("alert")?></div>
+                <?php }?>
                 <div class="row">
+
                     <div class="col-lg-6 col-12 wow fadeInUp" data-wow-delay="0.4s">
                         <!-- Single Enroll -->
                         <div class="enroll-form">
@@ -98,19 +109,19 @@
                             <form class="form" action="<?php echo base_url("$lang/message_send")?>" method="post">
                                 <div class="form-group">
                                     <label><?php echo $this->lang->line("ad_soyad")?></label>
-                                    <input name="name" type="text" placeholder="John Mathew">
+                                    <input name="name" type="text" placeholder="John Mathew" required >
                                 </div>
                                 <div class="form-group">
                                     <label><?php echo $this->lang->line("mail")?></label>
-                                    <input name="email" type="email" placeholder="john@youremail.com">
+                                    <input name="email" type="email" placeholder="john@youremail.com" required>
                                 </div>
                                 <div class="form-group">
                                     <label><?php echo $this->lang->line("telefon")?></label>
-                                    <input name="phone" type="email" placeholder="+99455555555">
+                                    <input name="phone" type="text" placeholder="+99455555555" required>
                                 </div>
                                 <div class="form-group">
                                     <label><?php echo $this->lang->line("mesajiniz")?></label>
-                                    <textarea name="message" placeholder="i would like to talking..."></textarea>
+                                    <textarea name="message" placeholder="Your message..." required></textarea>
                                 </div>
                                 <div class="form-group button">
                                     <button type="submit" class="btn"><?php echo $this->lang->line("gonder")?></button>
@@ -191,7 +202,10 @@
                 <!-- Single Team -->
                 <div class="single-team">
                     <div class="image">
-                        <img src="<?php echo base_url("uploads/teachers/$item[img]") ?>" alt="#">
+                        <img src="<?php echo base_url("uploads/teachers/$item[img]") ?>" style="
+    height: 353px!important;
+    width: 262px!important;
+    object-fit: cover!important; alt="#">
                         <a href="<?php echo base_url("$lang/teacher/single/$item[id]")?>" ><i class="fa fa-search"></i></a>
                     </div>
                     <!--team-content -->
@@ -280,7 +294,10 @@
                         <!-- Single Event -->
                         <div class="single-event">
                             <div class="head overlay">
-                                 <img style="object-fit: contain" src="<?php echo base_url("uploads/events/$item[img]") ?>" alt="#">
+                                 <img style="object-fit: contain" src="<?php echo base_url("uploads/events/$item[img]") ?>" style="
+    height: 235px!important;
+    width: 354px!important;
+    object-fit: cover!important; alt="#">
                                 <a href="<?php echo base_url("$lang/event/single/$item[id]");?>" class="btn"><i class="fa fa-search"></i></a>
                             </div>
                             <div class="event-content">
@@ -341,7 +358,10 @@
                         <div class="single-blog">
                             <div class="blog-head overlay">
 
-                                 <img src="<?php echo base_url("uploads/blog/$item[img]") ?>" alt="#">
+                                 <img src="<?php echo base_url("uploads/blog/$item[img]") ?>" style="
+    height: 247px!important;
+    width: 360px!important;
+    object-fit: cover!important; alt="#">
                             </div>
                             <div class="blog-content">
                                 <h4 class="blog-title"><a href="<?php echo base_url("$lang/blog/single/$item[id]");?>"><?php echo $item["name_$lang"]?></a></h4>

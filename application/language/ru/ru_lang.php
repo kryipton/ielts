@@ -83,3 +83,15 @@ $lang["xaricde_tehsil"] = "Учеба за границей";
 $lang["bloglar"] = "Блоги";
 $lang["Faq"] = "Чзв";
 
+
+$lang["course_features"] = "Особенности курса";
+$lang["leksiyalar"] = "Лекции";
+$lang["quizler"] = "Экзамены";
+$lang["kursun_muddeti"] = "Продолжительность курса";
+$lang["kursun_seviyesi"] = "Уровень курса";
+$lang["kursda_istirak_edecek_maksimum_telebe_sayi"] = "Количество студентов";
+$lang["sertifikat"] = "Сертификаты";
+$lang["qiymetlemdirmeler"] = "Оценки";
+$lang["kateqoriya"] = "Категория";
+$lang["useful_links"] = "Полезные ссылки";
+$lang["statik_text"] = "Наша компания призвана помочь людям, сдающим экзамен IELTS. Вы можете узнать много полезных советов и рекомендаций, а также получить полезную информацию.";

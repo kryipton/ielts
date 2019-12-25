@@ -25,20 +25,27 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
+
+                    <?php if (!empty($this->session->flashdata("sccs"))){ ?>
+                        <div class="alert alert-success"><?php echo $this->session->flashdata("sccs")?></div>
+                    <?php }?>
+                    <?php if (!empty($this->session->flashdata("alert"))){ ?>
+                        <div class="alert alert-danger"><?php echo $this->session->flashdata("alert")?></div>
+                    <?php }?>
                     <div class="form-head">
                         <!-- Form -->
-                        <form class="form">
+                        <form class="form" method="post" action="<?php echo base_url("$lang/message_send")?>">
                             <div class="form-group">
-                                <input name="name" type="text" placeholder="<?php echo $this->lang->line("ad_soyad")?>">
+                                <input name="name" type="text"  required placeholder="<?php echo $this->lang->line("ad_soyad")?>">
                             </div>
                             <div class="form-group">
-                                <input name="email" type="email" placeholder="<?php echo $this->lang->line("mail")?>">
+                                <input name="email" type="email" required placeholder="<?php echo $this->lang->line("mail")?>">
                             </div>
                             <div class="form-group">
-                                <input name="phone" type="text" placeholder="<?php echo $this->lang->line("telefon")?>">
+                                <input name="phone" type="text" required placeholder="<?php echo $this->lang->line("telefon")?>">
                             </div>
                             <div class="form-group">
-                                <textarea name="message" placeholder="<?php echo $this->lang->line("mesajiniz")?>"></textarea>
+                                <textarea name="message" required placeholder="<?php echo $this->lang->line("mesajiniz")?>"></textarea>
                             </div>
                             <div class="form-group">
                                 <div class="button">
