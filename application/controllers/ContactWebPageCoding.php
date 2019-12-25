@@ -33,10 +33,10 @@
      public function send_message()
      {
 
-         $name=$this->input->post("user");
-         $mail=$this->input->post("mail");
-         $phone=$this->input->post("number");
-         $msg=$this->input->post("msg");
+         $name=strip_tags($this->input->post("name"));
+         $mail=strip_tags($this->input->post("email"));
+         $phone=strip_tags($this->input->post("phone"));
+         $msg=strip_tags($this->input->post("message"));
          $config = Array(
              'protocol' => 'smtp',
              'smtp_host' => 'ssl://smtp.googlemail.com',
@@ -50,12 +50,14 @@
          $this->load->library("email");
          $this->email->initialize($config);
          $this->email->set_newline("\r\n");
-         $this->email->from('testermail0777@gmail.com', $this->input->post('user'));
-         $this->email->to("vuna172@gmail.com");
-         $this->email->subject(' LuckyTravel  ');
+         $this->email->from('testermail0777@gmail.com', $this->input->post('name'));
+         $this->email->to("mutalib0101@gmail.com");
+         $this->email->subject(' Ielts Coaching  ');
          $this->email->message("$name adlı şəxsdən mesaj:<br> $msg <br> <br> <strong>Şəxslə əlaqə:</strong> <br> $mail <br> $phone") ;
          $this->email->send();
+
          $this->session->set_flashdata("sccs", "Mesajınız göndərildi!");
+
          redirect(base_url(""));
      }
 

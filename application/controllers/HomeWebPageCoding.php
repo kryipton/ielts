@@ -31,7 +31,13 @@
          //telebe kurs sayisi counteri ucun
          $data["info"]=$this->Core->get_where_row(["id"=>1],"info");
          //telebe kurs sayisi counteri ucun
+
+         $data["slides"] = $this->Core->get_desc("main_slide");
          $data["courses"] = $this->Core->get_desc("course");
+         $data["course_about"] = $this->Core->get_where_row(array("id => 1"), "course_about");
+         $data["message_about"] = $this->Core->get_where_row(array("id => 1"), "messages_about");
+
+
          $this->load->view("$this->parent_folder/$this->sub_folder/whole_page",$data);
      }
 
