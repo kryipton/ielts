@@ -26,7 +26,7 @@
                     <div class="event-gallery">
                         <?php foreach ($images as $image){ ?>
                         <div class="single-gallery">
-                           <img src="<?php echo base_url("uploads/events/".$image) ?>" alt="#">
+                           <img src="<?php echo base_url("uploads/events/".$image['file']) ?>" alt="#">
                         </div>
                         <?php } ?>
                     </div>
@@ -44,17 +44,18 @@
                 <div class="learnedu-sidebar">
 
                     <div class="single-widget course">
-                        <h3>Popular <span>Courses</span></h3>
+                        <h3><?php echo $this->lang->line('popular') ?> <span><?php echo $this->lang->line('kurslar') ?></span></h3>
                         <!-- Single Course -->
+                        <?php foreach ($courses as $item) { ?>
                         <div class="single-course">
-                           <img src="<?php echo base_url("public/front/") ?>images/course/course1.jpg" alt="#">
+                           <img src="<?php echo base_url('uploads/course/'.$item['img']) ?>" alt="#">
                             <div class="course-content">
-                                <h4><a href="#">Beginner Course</a></h4>
-                                <div class="meta">$900.00, <span><i class="fa fa-clock-o"></i>3 Years</span></div>
+                                <h4><a href="<?php echo base_url("$lang/course/".$item['id']) ?>"><?php echo $item["name_$lang"] ?></a></h4>
+                                <div class="meta"><span><i class="fa fa-clock-o"></i><?php echo $item['duration'] ?></span></div>
                             </div>
                         </div>
                         <!-- Single Course -->
-
+                        <?php } ?>
                     </div>
                 </div>
             </div>

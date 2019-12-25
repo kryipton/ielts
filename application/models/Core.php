@@ -258,7 +258,10 @@
     }
 //==============================================BU sayt ucun lazim olan elave funksiyalar========================================
 
-
+    public function get_popular_courses($limit,$order,$table_name)
+    {
+        return $this->db->order_by($order, "ASC")->limit($limit)->get($table_name)->result_array();
+    }
 
 
  }
