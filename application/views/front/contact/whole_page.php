@@ -35,7 +35,7 @@
                                 <input name="email" type="email" placeholder="<?php echo $this->lang->line("mail")?>">
                             </div>
                             <div class="form-group">
-                                <input name="subject" type="text" placeholder="<?php echo $this->lang->line("telefon")?>">
+                                <input name="phone" type="text" placeholder="<?php echo $this->lang->line("telefon")?>">
                             </div>
                             <div class="form-group">
                                 <textarea name="message" placeholder="<?php echo $this->lang->line("mesajiniz")?>"></textarea>

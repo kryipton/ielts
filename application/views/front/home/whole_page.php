@@ -1,19 +1,21 @@
 <?php $this->load->view("front/includes/top_all"); ?>
+<?php $lang = $this->session->userdata("dil"); ?>
 
 <!-- Slider Area -->
 <section class="home-slider">
     <div class="slider-active">
+        <?php foreach ($slides as $item) {  ?>
         <!-- Single Slider -->
-        <div class="single-slider overlay" style=" background-image:url('<?php echo base_url("public/front/") ?>images/slider/slider-bg1.jpg')">
+        <div class="single-slider overlay" style=" background-image:url('<?php echo base_url("uploads/main_slide/").$item["img"] ?>')">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-12">
                         <div class="slider-text">
                             <h1>IELTS is here   <span>Education</span> & Courses</h1>
-                            <p>Our company is aimed to help people who are taking IELTS exam. You can learn lots of tips and tricks, and get useful inormation.</p>
+                            <p> Our company is aimed to help people who are taking IELTS exam. You can learn lots of tips and tricks, and get useful inormation.</p>
                             <div class="button">
-                                <a href="<?php echo base_url("teachers")?>" class="btn primary">Our Teachers</a>
-                                <a href="<?php echo base_url("about")?>" class="btn">About IELTS Coaching</a>
+                                <a href="<?php echo base_url("$lang/teachers")?>" class="btn primary"><?php echo $this->lang->line("muellimlerimiz")?></a>
+                                <a href="<?php echo base_url("$lang/about")?>" class="btn"><?php echo $this->lang->line("haqqimizda")?></a>
                             </div>
                         </div>
                     </div>
@@ -21,42 +23,7 @@
             </div>
         </div>
         <!--/ End Single Slider -->
-        <!-- Single Slider -->
-        <div class="single-slider overlay" style=" background-image:url('<?php echo base_url("public/front/") ?>images/slider/slider-bg2.jpg')">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-12">
-                        <div class="slider-text text-center">
-                            <h1>Score High with  <span>IELTS Coaching</span></h1>
-                            <p>Our company is aimed to help people who are taking IELTS exam. You can learn lots of tips and tricks, and get useful inormation.</p>
-                            <div class="button">
-                                <a href="<?php echo base_url("teachers")?>" class="btn primary">Our Teachers</a>
-                                <a href="<?php echo base_url("about")?>" class="btn">About IELTS Coaching</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/ End Single Slider -->
-        <!-- Single Slider -->
-        <div class="single-slider overlay" style=" background-image:url('<?php echo base_url("public/front/") ?>images/slider/slider-bg3.jpg')">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-4 col-md-8 offset-md-4 col-12">
-                        <div class="slider-text text-right">
-                            <h1>4 steps for <span>achiving   </span>   your goal</h1>
-                            <p>Our company is aimed to help people who are taking IELTS exam. You can learn lots of tips and tricks, and get useful inormation.</p>
-                            <div class="button">
-                                <a href="<?php echo base_url("teachers")?>" class="btn primary">Our Teachers</a>
-                                <a href="<?php echo base_url("about")?>" class="btn">About IELTS Coaching</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/ End Single Slider -->
+       <?php }  ?>
     </div>
 </section>
 <!--/ End Slider Area -->
@@ -67,72 +34,35 @@
         <div class="row">
             <div class="col-12 wow zoomIn">
                 <div class="section-title">
-                    <h2>Popular <span>Courses</span> We Offer</h2>
-                    <p>Mauris at varius orci. Vestibulum interdum felis eu nisl pulvinar, quis ultricies nibh. Sed ultricies ante vitae laoreet sagittis. In pellentesque viverra purus. Sed risus est, molestie nec hendrerit hendreri </p>
+                    <h2><?php echo $course_about["name_$lang"]?></h2>
+                    <p><?php echo $course_about["desc_$lang"]?></p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
                 <div class="course-slider">
-                    <!-- Single Course -->
-                    <div class="single-course">
-                        <div class="course-head overlay">
-                            <img src="<?php echo base_url("public/front/") ?>images/course/course1.jpg" alt="#">
-                            <a href="course-single.html" class="btn"><i class="fa fa-link"></i></a>
-                        </div>
-                        <div class="single-content">
-                            <h4><a href="course-single.html"><span>Science</span>General English</a></h4>
-                            <p>Our company is aimed to help people who are taking IELTS exam. You can learn lots of tips and tricks, and get useful inormation.</p>
-                        </div>
-                        <div class="course-meta">
-                            <div class="meta-left">
-                                <span><i class="fa fa-users"></i>36 Seat</span>
-                                <span><i class="fa fa-clock-o"></i>2 Years</span>
+                    <?php foreach ($courses as $item) {  ?>
+                        <!-- Single Course -->
+                        <div class="single-course">
+                            <div class="course-head overlay">
+                                <img src="<?php echo base_url("uploads/course/").$item["img"] ?>" alt="#">
+                                <a href="<?php echo base_url("$lang/course/").$item["id"] ?>" class="btn"><i class="fa fa-link"></i></a>
                             </div>
-                            <span class="price">$350</span>
-                        </div>
-                    </div>
-                    <!--/ End Single Course -->
-                    <!-- Single Course -->
-                    <div class="single-course">
-                        <div class="course-head overlay">
-                            <img src="<?php echo base_url("public/front/") ?>images/course/course2.jpg" alt="#">
-                            <a href="course-single.html" class="btn"><i class="fa fa-link"></i></a>
-                        </div>
-                        <div class="single-content">
-                            <h4><a href="course-single.html"><span>Science</span>Pre- IELTS</a></h4>
-                            <p>Our company is aimed to help people who are taking IELTS exam. You can learn lots of tips and tricks, and get useful inormation.</p>
-                        </div>
-                        <div class="course-meta">
-                            <div class="meta-left">
-                                <span><i class="fa fa-users"></i>20 Seat</span>
-                                <span><i class="fa fa-clock-o"></i>1 Years</span>
+                            <div class="single-content">
+                                <h4><a href="<?php echo base_url("$lang/course/").$item["id"] ?>"><span><?php echo $item["skill_level"]?></span><?php echo $item["name_$lang"]?></a></h4>
+                                <p><?php echo mb_substr(strip_tags($item["desc_$lang"]), 0,400)."...."?></p>
                             </div>
-                            <span class="price">$590</span>
-                        </div>
-                    </div>
-                    <!--/ End Single Course -->
-                    <!-- Single Course -->
-                    <div class="single-course">
-                        <div class="course-head overlay">
-                            <img src="<?php echo base_url("public/front/") ?>images/course/course3.jpg" alt="#">
-                            <a href="course-single.html" class="btn"><i class="fa fa-link"></i></a>
-                        </div>
-                        <div class="single-content">
-                            <h4><a href="course-single.html"><span>Science</span>IELTS</a></h4>
-                            <p>Our company is aimed to help people who are taking IELTS exam. You can learn lots of tips and tricks, and get useful inormation.</p>
-                        </div>
-                        <div class="course-meta">
-                            <div class="meta-left">
-                                <span><i class="fa fa-users"></i>49 Seat</span>
-                                <span><i class="fa fa-clock-o"></i>2 Years</span>
+                            <div class="course-meta">
+                                <div class="meta-left">
+                                    <span><i class="fa fa-users"></i><?php echo $item["seats"]?></span>
+                                    <span><i class="fa fa-clock-o"></i><?php echo $item["course_time"]?></span>
+                                </div>
+                                <span class="price">$<?php echo $item["price"]?></span>
                             </div>
-                            <span class="price">$140</span>
                         </div>
-                    </div>
-                    <!--/ End Single Course -->
-
+                        <!--/ End Single Course -->
+                    <?php }  ?>
                 </div>
             </div>
         </div>
@@ -141,7 +71,7 @@
 <!--/ End Courses -->
 
 <!-- Enroll -->
-<section class="enroll overlay section" data-stellar-background-ratio="0.5" style="background-image:url('<?php echo base_url("public/front/") ?>images/enroll-bg.jpg')" id="enroll" >
+<section class="enroll overlay section" data-stellar-background-ratio="0.5" style=" background-image:url('<?php echo base_url("public/front/") ?>images/enroll-bg.jpg')" id="enroll" >
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1">
@@ -150,29 +80,28 @@
                         <!-- Single Enroll -->
                         <div class="enroll-form">
                             <div class="form-title">
-                                <h2>Enroll Today</h2>
-                                <p>Before you miss the chance to get your seat!</p>
+                                <h2><?php echo $this->lang->line("muraciet")?></h2>
                             </div>
                             <!-- Form -->
-                            <form class="form" action="#">
+                            <form class="form" action="<?php echo base_url("$lang/message_send")?>" method="post">
                                 <div class="form-group">
-                                    <label>Enter Your full name</label>
+                                    <label><?php echo $this->lang->line("ad_soyad")?></label>
                                     <input name="name" type="text" placeholder="John Mathew">
                                 </div>
                                 <div class="form-group">
-                                    <label>Enter Your Email</label>
+                                    <label><?php echo $this->lang->line("mail")?></label>
                                     <input name="email" type="email" placeholder="john@youremail.com">
                                 </div>
                                 <div class="form-group">
-                                    <label>Enter Your number</label>
-                                    <input name="email" type="email" placeholder="+99455555555">
+                                    <label><?php echo $this->lang->line("telefon")?></label>
+                                    <input name="phone" type="email" placeholder="+99455555555">
                                 </div>
                                 <div class="form-group">
-                                    <label>Type your messages</label>
+                                    <label><?php echo $this->lang->line("mesajiniz")?></label>
                                     <textarea name="message" placeholder="i would like to talking..."></textarea>
                                 </div>
                                 <div class="form-group button">
-                                    <button type="submit" class="btn">Register Now</button>
+                                    <button type="submit" class="btn"><?php echo $this->lang->line("gonder")?></button>
                                 </div>
                             </form>
                             <!--/ End Form -->
@@ -182,9 +111,9 @@
                     <div class="col-lg-6 col-12 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="enroll-right">
                             <div class="section-title">
-                                <h2>We Have More than 28,690+ Student With online Join!</h2>
-                                <p>Mauris at varius orci. Vestibulum interdum felis eu nisl pulvinar, quis ultricies nibh. Sed ultricies ante vitae laoreet sagittis. In pellentesque viverra purus. Mauris at varius orci. Vestibulum interdum felis eu nisl pulvinar, quis ultricies nibh. Sed ultricies ante vitae laoreet sagittis.</p>
-                            </div>
+                                <h2><?php echo $message_about["name_$lang"] ?></h2>
+                                <?php echo $message_about["desc_$lang"] ?>
+                                </div>
                         </div>
                         <!-- Skill Main -->
                         <div class="skill-main">
@@ -193,9 +122,9 @@
                                     <!-- Single Skill -->
                                     <div class="single-skill">
                                         <div class="circle" data-value="0.7" data-size="130">
-                                            <strong>28K+</strong>
+                                            <strong><?php echo $info["active_students"] ?>+</strong>
                                         </div>
-                                        <h4>Students</h4>
+                                        <h4><?php echo $this->lang->line("telebeler")?></h4>
                                     </div>
                                     <!--/ End Single Skill -->
                                 </div>
@@ -203,9 +132,9 @@
                                     <!-- Single Skill -->
                                     <div class="single-skill">
                                         <div class="circle" data-value="0.9" data-size="130">
-                                            <strong>50+</strong>
+                                            <strong><?php echo $info["active_courses"] ?>+</strong>
                                         </div>
-                                        <h4>Courses</h4>
+                                        <h4><?php echo $this->lang->line("kurslar")?></h4>
                                     </div>
                                     <!--/ End Single Skill -->
                                 </div>
@@ -213,9 +142,9 @@
                                     <!-- Single Skill -->
                                     <div class="single-skill">
                                         <div class="circle" data-value="0.8" data-size="130">
-                                            <strong>33+</strong>
+                                            <strong><?php echo $info["awards"] ?>+</strong>
                                         </div>
-                                        <h4>Teachers</h4>
+                                        <h4><?php echo $this->lang->line("mukafatlar")?></h4>
                                     </div>
                                     <!--/ End Single Skill -->
                                 </div>
@@ -462,7 +391,6 @@
 </section>
 <!--/ End Events -->
 
-<!-- Fun Facts -->
 <!-- Fun Facts -->
 <?php $this->load->view("front/includes/counters_div"); ?>
 <!--/ End Fun Facts --><!--/ End Fun Facts -->
