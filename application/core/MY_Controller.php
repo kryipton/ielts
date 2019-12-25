@@ -8,9 +8,9 @@ class MY_Controller extends CI_Controller{
     {
         parent::__construct();
 
-//        if (empty($this->session->userdata("user"))){
-//                redirect(base_url("Admin"));
-//        }
+        if (empty($this->session->userdata("user"))){
+                redirect(base_url("Admin"));
+        }
 
     }
 
