@@ -91,6 +91,7 @@ $lang["sertifikat"] = "Certificates";
 $lang["qiymetlemdirmeler"] = "Assessments";
 $lang["kateqoriya"] = "Category";
 $lang["useful_links"] = "Useful Links";
+$lang["popular"] = "Popular";
 $lang["statik_text"] = "Our company is aimed to help people who are taking IELTS exam. You can learn lots of tips and tricks, and get useful inormation.";
 
 

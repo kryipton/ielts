@@ -92,6 +92,7 @@ $lang["sertifikat"] = "Sertifikatlar";
 $lang["qiymetlemdirmeler"] = "Qiymətləndirmələr";
 $lang["kateqoriya"] = "Kateqoriya";
 $lang["useful_links"] = "Faydalı Linklər";
+$lang["popular"] = "Popular";
 $lang["statik_text"] = "Şirkətimiz IELTS imtahanı verən insanlara kömək etmək məqsədi daşıyır. Çox sayda tövsiyə və faydalı inormasiya əldə edə bilərsiniz.";
 
 
