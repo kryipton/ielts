@@ -32,6 +32,8 @@
 
      public function send_message()
      {
+        $contact = $this->Core->get_where_row(array("id => 1"), "contact");
+
 
          $name=strip_tags($this->input->post("name"));
          $mail=strip_tags($this->input->post("email"));
@@ -53,7 +55,7 @@
              $this->email->initialize($config);
              $this->email->set_newline("\r\n");
              $this->email->from('testermail0777@gmail.com', $this->input->post('name'));
-             $this->email->to("mutalib0101@gmail.com");
+             $this->email->to("$contact[email]");
              $this->email->subject(' Ielts Coaching  ');
              $this->email->message("$name adlı şəxsdən mesaj:<br> $msg <br> <br> <strong>Şəxslə əlaqə:</strong> <br> $mail <br> $phone");
              $this->email->send();
